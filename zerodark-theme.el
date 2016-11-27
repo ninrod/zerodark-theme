@@ -231,8 +231,8 @@ The result is cached for one second to avoid hiccups."
    `(highlight ((,class (:background ,highlight :foreground ,default :underline nil))))
    `(region ((,class (:background ,highlight :foreground ,default))))
    `(secondary-selection ((,class (:background ,highlight :foreground ,default))))
-   `(isearch ((,class (:foreground ,background-lighter :background ,peach ))))
-   `(lazy-highlight ((,class (:foreground ,peach :weight bold :background ,background-lighter :underline t))))
+   `(isearch ((,class (:foreground ,background-red :background ,red ))))
+   `(lazy-highlight ((,class (:foreground ,red :weight bold :background ,background-red :underline t))))
 
    `(hl-line ((,class (:background ,hl-line :underline unspecified :inherit nil))))
 
