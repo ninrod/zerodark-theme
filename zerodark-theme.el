@@ -467,8 +467,8 @@ The result is cached for one second to avoid hiccups."
    `(org-column-title ((,class (:background ,background-blue :foreground ,blue :weight bold))))
 
    ;; org blocks
-   `(org-block-begin-line ((,class (:background ,background-green :foreground ,green-light :height 0.9))))
-   `(org-block-end-line ((,class (:background ,background-green :foreground ,green-light :height 0.9))))
+   ;; `(org-block-begin-line ((,class (:background ,background-green :foreground ,green-light :height 0.9))))
+   ;; `(org-block-end-line ((,class (:background ,background-green :foreground ,green-light :height 0.9))))
 
    ;; Gnus faces -- from wombat, feel free to improve :)
    `(gnus-group-news-1 ((,class (:weight bold :foreground "#95e454"))))
