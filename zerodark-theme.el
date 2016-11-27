@@ -310,8 +310,8 @@ The result is cached for one second to avoid hiccups."
                                             :inverse-video unspecified))))
 
    ;; link faces
-   `(link ((,class (:foreground ,blue :underline t))))
-   `(link-visited ((,class (:foreground ,blue :underline t))))
+   `(link ((,class (:foreground ,orange :underline t))))
+   `(link-visited ((,class (:foreground ,purple :underline t))))
 
    ;; widget faces
    `(widget-field ((,class (:background ,highlight :box (:line-width 1 :color ,comment)))))
@@ -465,6 +465,9 @@ The result is cached for one second to avoid hiccups."
    ;; org columns
    `(org-column ((,class (:background ,background-darker))))
    `(org-column-title ((,class (:background ,background-blue :foreground ,blue :weight bold))))
+
+
+   `(org-table ((,class (:foreground ,blue :background ,background-dark))))
 
    ;; org blocks
    ;; `(org-block-begin-line ((,class (:background ,background-green :foreground ,green-light :height 0.9))))
