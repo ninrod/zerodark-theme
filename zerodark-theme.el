@@ -253,13 +253,13 @@ The result is cached for one second to avoid hiccups."
    `(font-lock-warning-face ((,class (:foreground ,red :weight bold :background ,background-red))))
 
    ;; Mode line faces
-      `(mode-line ((,class (:background ,background-blue :height 0.9 :foreground ,blue
+   `(mode-line ((,class (:background ,background-blue :height 0.9 :foreground ,blue
                                      :box ,(when zerodark-use-paddings-in-mode-line
-                                              (list :line-width 6 :color background-blue))))))
-      `(mode-line-inactive ((,class (:background ,background-darker :height 0.9 :foreground ,default
-                                                 :box ,(when zerodark-use-paddings-in-mode-line
-                                                         (list :line-width 6 :color background-darker))))))
-      `(header-line ((,class (:inherit mode-line-inactive))))
+                                             (list :line-width 6 :color background-blue))))))
+   `(mode-line-inactive ((,class (:background ,background-darker :height 0.9 :foreground ,default
+                                              :box ,(when zerodark-use-paddings-in-mode-line
+                                                      (list :line-width 6 :color background-darker))))))
+   `(header-line ((,class (:inherit mode-line-inactive))))
 
    ;; error & success
    `(error ((,class (:foreground ,red :weight bold))))
@@ -469,13 +469,13 @@ The result is cached for one second to avoid hiccups."
    `(org-upcoming-deadline ((,class (:foreground ,orange))))
    `(org-headline-done ((,class (:foreground ,comment))))
    `(outline-1 ((,class (:foreground ,blue :weight bold))))
-   `(outline-2 ((,class (:foreground ,purple :weight bold))))
-   `(outline-3 ((,class (:foreground ,peach :weight bold))))
-   `(outline-4 ((,class (:foreground ,green-light :weight bold))))
-   `(outline-5 ((,class (:foreground ,blue :weight bold))))
-   `(outline-6 ((,class (:foreground ,purple :weight bold))))
+   `(outline-2 ((,class (:foreground ,green :weight bold))))
+   `(outline-3 ((,class (:foreground ,purple :weight bold))))
+   `(outline-4 ((,class (:foreground ,light :weight bold))))
+   `(outline-5 ((,class (:foreground ,orange-light :weight bold))))
+   `(outline-6 ((,class (:foreground ,green-light :weight bold))))
    `(outline-7 ((,class (:foreground ,peach :weight bold))))
-   `(outline-8 ((,class (:foreground ,green-light :weight bold))))
+   `(outline-8 ((,class (:foreground ,orange :weight bold))))
    `(org-column-title ((,class (:foreground unspecified :background unspecified))))
    `(org-agenda-date ((,class (:foreground ,purple :weight bold))))
    `(org-agenda-date-today ((,class (:foreground ,blue :weight bold :background ,background-blue :box 1))))
