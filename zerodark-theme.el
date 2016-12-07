@@ -587,7 +587,7 @@ The result is cached for one second to avoid hiccups."
 
    ;; smartparens
    `(sp-pair-overlay-face ((,class (:background ,highlight :foreground nil))))
-   `(sp-show-pair-match-face ((,class (:foreground ,spring-green3 :background ,background-green :inherit bold :underline t))))
+   `(sp-show-pair-match-face ((,class (:foreground ,spring-green3 :background ,background-blue :inherit bold :underline t))))
 
    ;; clojure
    `(clojure-keyword-face ((,class (:inherit font-lock-builtin-face))))
