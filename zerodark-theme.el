@@ -215,6 +215,7 @@ The result is cached for one second to avoid hiccups."
       (blue-dark (if (true-color-p) "#1f5582" "#005f87"))
       (green (if (true-color-p) "#98be65" "#87af5f"))
       (green-light (if (true-color-p) "#9eac8c" "#afaf87"))
+      (spring-green3 (if (true-color-p) "#00cd66" "green"))
       (peach "PeachPuff3")
       (diff-added-background (if (true-color-p) "#284437" "#284437"))
       (diff-added-refined-background (if (true-color-p) "#1e8967" "#1e8967"))
@@ -254,10 +255,10 @@ The result is cached for one second to avoid hiccups."
    `(font-lock-warning-face ((,class (:foreground ,red :weight bold :background ,background-red))))
 
    ;; Mode line faces
-   `(mode-line ((,class (:background ,background-blue :height 0.9 :foreground ,blue
+   `(mode-line ((,class (:background ,background-blue :height 1.0 :foreground ,blue
                                      :box ,(when zerodark-use-paddings-in-mode-line
                                              (list :line-width 6 :color background-blue))))))
-   `(mode-line-inactive ((,class (:background ,background-darker :height 0.9 :foreground ,default
+   `(mode-line-inactive ((,class (:background ,background-darker :height 1.0 :foreground ,default
                                               :box ,(when zerodark-use-paddings-in-mode-line
                                                       (list :line-width 6 :color background-darker))))))
    `(header-line ((,class (:inherit mode-line-inactive))))
@@ -581,7 +582,12 @@ The result is cached for one second to avoid hiccups."
    `(visible-mark-face2 ((,class (:foreground ,peach :inverse-video t))))
 
    ;; show-paren
-   `(show-paren-match ((,class (:background ,blue-dark))))
+   `(show-paren-match ((,class (:background ,background-green))))
+   `(show-paren-mismatch ((,class (:background ,background-red))))
+
+   ;; smartparens
+   `(sp-pair-overlay-face ((,class (:background ,highlight :foreground nil))))
+   `(sp-show-pair-match-face ((,class (:foreground ,spring-green3 :background ,background-green :inherit bold :underline t))))
 
    ;; clojure
    `(clojure-keyword-face ((,class (:inherit font-lock-builtin-face))))
