@@ -496,6 +496,7 @@ The result is cached for one second to avoid hiccups."
    ;; org blocks
    ;; `(org-block-begin-line ((,class (:background ,background-green :foreground ,green-light :height 0.9))))
    ;; `(org-block-end-line ((,class (:background ,background-green :foreground ,green-light :height 0.9))))
+     `(org-block ((,class (:background ,background-darker ))))
 
    ;; Gnus faces -- from wombat, feel free to improve :)
    `(gnus-group-news-1 ((,class (:weight bold :foreground "#95e454"))))
