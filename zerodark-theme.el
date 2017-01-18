@@ -485,6 +485,7 @@ The result is cached for one second to avoid hiccups."
    `(org-scheduled-today ((,class (:foreground ,default :weight bold))))
    `(org-agenda-done ((,class (:foreground ,comment))))
    `(org-time-grid ((,class (:foreground ,comment))))
+   `(org-verbatim ((,class (:foreground ,blue-dark :weight bold))))
 
    ;; org columns
    `(org-column ((,class (:background ,background-darker))))
