@@ -377,9 +377,11 @@ The result is cached for one second to avoid hiccups."
 
    `(magit-section-highlight ((,class (:background ,background-darker))))
    `(magit-section-heading ((,class (:foreground ,grey :weight bold))))
-   `(magit-branch-current ((,class (:foreground ,blue :background ,background-darker :box 1))))
-   `(magit-branch-local ((,class (:foreground ,purple :background ,background-darker :box 1))))
-   `(magit-branch-remote ((,class (:foreground ,green :background ,background-darker :box 1))))
+
+   `(magit-branch-current ((,class ( :foreground ,blue  :background ,background-darker  :box 1))))
+   `(magit-branch-local   ((,class ( :foreground ,green :background ,background-darker :box 1))))
+   `(magit-branch-remote  ((,class ( :foreground ,red   :background ,background-darker  :box 1))))
+   `(magit-tag            ((,class ( :foreground ,peach :background "#202020"         :weight bold :box 1))))
 
    `(magit-reflog-reset ((,class (:background ,background-red :foreground ,red :weight bold))))
    `(magit-reflog-amend ((,class (:background ,background-blue :foreground ,blue :weight bold))))
@@ -395,9 +397,13 @@ The result is cached for one second to avoid hiccups."
 
    `(git-commit-summary ((,class (:weight bold))))
 
-   `(magit-tag ((,class (:foreground ,purple :weight bold :box 1 :background "#202020"))))
    `(magit-sequence-part ((,class (:foreground ,orange :weight bold))))
    `(magit-sequence-head ((,class (:foreground ,green :weight bold))))
+
+   ;; Eyebrowse
+
+   `(eyebrowse-mode-line-active ((,class (:foreground ,orange))))
+   `(eyebrowse-mode-line-inactive ((,class (:foreground ,comment))))
 
    ;; Message faces
    `(message-header-name ((,class (:foreground ,blue :weight bold))))
