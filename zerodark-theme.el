@@ -401,7 +401,6 @@ The result is cached for one second to avoid hiccups."
    `(magit-sequence-head ((,class (:foreground ,green :weight bold))))
 
    ;; Eyebrowse
-
    `(eyebrowse-mode-line-active ((,class (:foreground ,orange))))
    `(eyebrowse-mode-line-inactive ((,class (:foreground ,comment))))
 
